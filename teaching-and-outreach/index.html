@@ -10,6 +10,8 @@
 .teach ol.lec li span.n{display:inline-block;width:3.6rem;color:#777;font-variant-numeric:tabular-nums}
 .teach ul.links{margin:.25rem 0 0 0;padding-left:1.2rem}
 .teach hr{border:0;border-top:1px solid #bbb;margin:2rem 0 .5rem}
+.teach ol.lec.one{columns:1}
+.teach ol.lec li .rd{font-size:.88rem;color:#555;margin:.05rem 0 .3rem 3.6rem}
 @media (max-width:640px){.teach ol.lec{columns:1}}
 </style>
 </head><body class="flex md:flex-row-reverse flex-col-reverse items-center md:items-start justify-start bg-gradient-to-r from-slate-50 via-main-50 to-main-50"><div class="w-[fill-available] h-[fill-available] md:h-auto flex justify-center"><div id=content class="flex flex-col items-center max-w-[800px] md:w-5/6 pb-20 md:pt-12 px-8"><div class="article mt-0 teach"><div class=mt-10></div>
@@ -40,10 +42,39 @@
 <hr>
 
 <h2 id=cvx>Convex Optimization and its Applications in Computer Science</h2>
-<ul class=links>
-<li><a href=/resources/CSCVXClass/index.htm>Course webpage</a></li>
-<li>Software: <a href=https://www.cvxpy.org>CVXPY</a>, Stanford's modelling language for convex optimization</li>
-</ul>
+<p class=desc>The course covers the conceptual and algorithmic sides of convex optimization as well as dynamic programming: cone programming (linear, quadratic and semidefinite programming), geometric programming, and dynamic programming. On the algorithmic side it covers optimization decomposition, convex relaxation and proximal algorithms for large-scale and non-convex problems, with emphasis on software. Applications are drawn from combinatorial graph problems, Internet and wireless networks, online social networks, machine learning, statistical inference and artificial intelligence.</p>
+<p class=desc>Textbook: S. Boyd and L. Vandenberghe, <a href=http://www.stanford.edu/~boyd/cvxbook/>Convex Optimization</a>, Cambridge University Press, 2004. Software: <a href=https://www.cvxpy.org>CVXPY</a> (Stanford). Prerequisites: linear algebra, advanced calculus and some programming. I thank Professors Stephen Boyd (Stanford), Mung Chiang (Princeton) and Steven Low (Caltech) for many of the course materials.</p>
+<ol class="lec one">
+<li><span class=n>Lec 1</span><a href=/resources/CSCVXClass/Lec1.pdf>Introduction</a></li>
+<li><span class=n>Lec 2a</span><a href=/resources/CSCVXClass/Lec2.pdf>Convex Functions and Sets</a></li>
+<li><span class=n>Lec 2b</span><a href=/resources/CSCVXClass/Lec2b.pdf>Solving Inequalities</a></li>
+<li><span class=n>Lec 3a</span><a href=/resources/CSCVXClass/Lec3.pdf>Convex Optimization and Lagrange Duality</a></li>
+<li><span class=n>Lec 3b</span><a href=https://web.stanford.edu/class/ee364a/lectures/cvx_lecture_slides.pdf>Disciplined Convex Programming and CVX</a> (slides from Boyd's EE364a)</li>
+<li><span class=n>Lec 4a</span><a href=/resources/CSCVXClass/Lec4.pdf>Linear and Quadratic Programming</a></li>
+<li><span class=n>Lec 4b</span><a href=/resources/CSCVXClass/CVXPY.pdf>CVXPY Software Demo</a></li>
+<li><span class=n>Lec 5</span><a href=/resources/CSCVXClass/LecRank.pdf>Intelligence in Web and Sports Rating by Least-Squares and Maximum Likelihood Estimation</a>
+<div class=rd>Reading: D. F. Gleich, <a href=https://arxiv.org/pdf/1407.5107.pdf>PageRank Beyond the Web</a>, SIAM Review, 2015; S. Teng, <a href=https://viterbi-web.usc.edu/~shanghua/teaching/Fall2019-670/networkDataAnalysisPrintedBook.pdf>Scalable Algorithms for Data and Network Analysis</a>, FnT TCS, 2016.</div></li>
+<li><span class=n>Lec 6</span><a href=/resources/CSCVXClass/Lec5.pdf>Unconstrained Optimization Algorithms</a></li>
+<li><span class=n>Lec 7</span><a href=/resources/CSCVXClass/Lec13.pdf>Primal and Dual Decomposition: Theory and Distributed Algorithms</a></li>
+<li><span class=n>Lec 8</span><a href=/resources/CSCVXClass/Lec14.pdf>Internet Network Utility Maximization</a>
+<div class=rd>Reading: S. Shakkottai and R. Srikant, <a href=http://www.ece.tamu.edu/~sshakkot/index_files/shakkottai_srikant_net_optimization_control.pdf>Network Optimization and Control</a>, FnT Networking, 2007; S. Low, <a href=http://netlab.caltech.edu/research/communication-networks>FAST TCP and Layering as Optimization Decomposition</a>, Cambridge tutorial 2011 (<a href=https://vimeo.com/39752673>video 1</a>, <a href=https://vimeo.com/39758488>video 2</a>).</div></li>
+<li><span class=n>Lec 9</span><a href=/resources/CSCVXClass/Lec9.pdf>Constrained Optimization Algorithms</a>
+<div class=rd>Reading: A. Forsgren, P. Gill and M. H. Wright, <a href=/resources/CSCVXClass/siam_2002.pdf>Interior Methods for Nonlinear Optimization</a>, SIAM Review, 2002.</div></li>
+<li><span class=n>Lec 9a</span><a href=/resources/CSCVXClass/LecOSQP.pdf>Open-Source Optimization Solvers</a>
+<div class=rd>Reading: S. Boyd, <a href=/resources/CSCVXClass/boyd_sept12_hk2017.pdf>Domain-specific Languages for Convex Optimization</a>, 2017 (<a href=https://www.youtube.com/watch?v=GfLyfLKoMIU>video</a>).</div></li>
+<li><span class=n>Lec 10</span><a href=/resources/CSCVXClass/Lec10.pdf>Geometric Programming</a> and <a href=/resources/CSCVXClass/CVXDGP.pdf>Disciplined Geometric Programming Software Demo</a>
+<div class=rd>Reading: M. Chiang, <a href=http://www.princeton.edu/~chiangm/gp.pdf>Geometric Programming for Communication Systems</a>, FnT Communications and Information Theory, 2005.</div></li>
+<li><span class=n>Lec 11</span><a href=/resources/CSCVXClass/Lec11.pdf>Wireless Network Optimization</a>
+<div class=rd>Reading: C. W. Tan, <a href=/resources/CSCVXClass/Wireless_Network_Optimization_by_Perron_Frobenius_Theory.pdf>Wireless Network Optimization by Perron-Frobenius Theory</a>, FnT Networking, 2015.</div></li>
+<li><span class=n>Lec 12</span><a href=/resources/CSCVXClass/Lec12.pdf>Semidefinite Programming</a>
+<div class=rd>Reading: L. Vandenberghe and S. Boyd, <a href=http://www.seas.ucla.edu/~vandenbe/publications/semidef_prog.pdf>Semidefinite Programming</a>, SIAM Review, 1996.</div></li>
+<li><span class=n>Lec 13</span><a href=/resources/CSCVXClass/aitip.pdf>Automated Reasoning by Convex Optimization in Artificial Intelligence Applications</a>
+<div class=rd>Reading: S. Boyd et al., <a href=https://stanford.edu/class/ee367/reading/admm_distr_stats.pdf>Distributed Optimization and Statistical Learning via ADMM</a>, FnT Machine Learning, 2010; F. Bach et al., <a href=https://www.di.ens.fr/~fbach/bach_jenatton_mairal_obozinski_FOT.pdf>Optimization with Sparsity-inducing Penalties</a>, FnT Machine Learning, 2011.</div></li>
+<li><span class=n>Lec 14</span>Optimization Methods for Nonconvex Problems</li>
+<li><span class=n>Lec 15</span>Dynamic Programming and Bellman Principle of Optimality
+<div class=rd>Reading: Y. LeCun, Y. Bengio and G. Hinton, Deep Learning, Nature, 2015; N. Parikh and S. Boyd, <a href=http://web.stanford.edu/~boyd/papers/prox_algs.html>Proximal Algorithms</a>, FnT Optimization, 2014.</div></li>
+<li><span class=n>Review</span><a href=/resources/CSCVXClass/Conclusion.pdf>Revision Lecture</a> and project demo</li>
+</ol>
 
 <h2 id=ai>Artificial Intelligence: Past, Present, Future</h2>
 <p class=desc>A general-audience course on the history and ideas of AI, from logic to machine learning and chatbots.</p>
